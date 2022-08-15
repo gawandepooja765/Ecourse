@@ -1,1 +1,96 @@
+.float-left {
+    float: left;
+}
+.float-right{
+    float:right;
+}
+/* font classes */
+.fw-600 {
+    font-weight: 600;
+}
+/* text classes */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* width classes */
+.w-10{
+    width: 10%;
+}
+.w-20{
+    width: 20%;
+}
+.w-24{
+    width: 24%;
+}
 
+.w-30{
+    width: 30%;
+}
+.w-32{
+    width: 32%;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+/* padding classes */
+.px-15px{
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.px-10px{
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+.py-10px{
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+.py-20px{
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+.py-50px{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.px-50px{
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.px-90px{
+    padding-left: 90px;
+    padding-right: 90px; 
+}
+.fs-13px {
+    font-size: 13px;
+}
+.text-u{
+    text-transform: uppercase;
+}
+.text-c{
+    text-transform: capitalize;
+}
+    .clearboth {
+    clear: both; 
+}
+
+.mx{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.my{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mr-1-per {
+    margin-right: 1%;
+}

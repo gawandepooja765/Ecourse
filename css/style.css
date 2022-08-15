@@ -1,1 +1,670 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6C6A74;
+    text-align: left;
+    background-color: #fff;    
+}
+h1{
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+}
+.orange-color{
+    color: #fd7e14;
+    font-size: 30px;    
+}
+.container{
+    width: 100%;
+    border-bottom: 1px solid #6C6A74;
+}
 
+/*nav bar*/
+.dropbtn {
+    background-color:#F2F1F8;
+    color:#fd7e14;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #F2F1F8;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #d2cfe7;
+  }
+  .menu-bar ul li{
+      display: inline-block;
+      text-transform: capitalize;
+      padding: 15px;
+      font-size: 18px;
+  }
+  .menu-bar ul li a{
+      text-decoration: none;
+      color: #44425A;
+      font-weight: 800;
+  }
+  .menu-bar ul li a:hover{
+      color: #fd7e14;
+  }
+  .btn{
+      color: white;
+      font-weight: 400;
+      border: 1px solid transparent;
+      background-color: #fd7e14;
+      border: none;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 8px;
+      transition: color 0.15s;   
+    
+  }
+  .nav-bar{
+      width: 100%;
+      
+  }
+  .nav-bar div{
+      display: inline-block; 
+      padding: 0 50px;     
+  }
+
+  /*slider*/
+
+  .image-slider{
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+  .slides{
+      display: flex;
+      width: 100%;
+  }
+  .slides img{
+    
+      width: 100%;
+      transition: all 0.15s ease;
+  }
+  .slides input{
+      display: none;
+  }
+  .dots{
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      
+  }
+  .dots label{
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 3px solid red;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      margin:5px;
+  }
+.dots label:hover{background-color: royalblue}
+#img1:checked ~.m1{
+    margin-left: 0;
+}
+#img2:checked ~.m2{
+    margin-left: -100%;
+}
+#img3:checked ~.m3{
+    margin-left: -200%;
+
+}
+.banner{
+    position: absolute;
+    color: white;
+    top: 50%;
+}
+.about-us{
+    width: 100%;
+}
+.about-us div{
+    display: inline-block;
+    width: 49%;
+}
+.about-us img{
+    max-width: 100%;
+    border-radius: 8px;
+    vertical-align: middle;
+    height: auto;
+    border-style: none;
+    margin-bottom: 0;
+    padding: 30px;
+
+}
+.about-info{
+    margin-top: 0;
+
+}
+.about-info h1{
+    text-transform: capitalize;
+    color: #44425A;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.about-info h3{
+    color: #fd7e14;
+    text-transform: uppercase;
+}
+.about-info .btn{
+    margin: 10px;   
+}
+.subjects{
+    position: relative;
+    width: 100%;
+}
+.subjects h3{
+    color: #fd7e14;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.subjects h2{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.subjects img{
+    
+    border-radius: 10px;
+    margin: 10px;
+    transition: .5s;
+    filter: brightness(0.6);
+}
+.banner-sub{
+    position: absolute;
+    top: 180px;    
+}
+.banner-sub h4{
+    color: #fff;  
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+.banner-sub span{
+    color: #fff;  
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    
+}
+.banner-2{
+    position: absolute;
+    top: 370px;
+    
+}
+
+.banner-2 h4{
+    color: #fff;  
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+.banner-2 span{
+    color: #fff;  
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    padding-left: 39px;
+    
+}
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+.courses h3{
+    color: #fd7e14;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.courses h2{
+font-weight: bolder;
+font-size: 40px;
+
+    
+}
+.courses a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 350px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0px 10px;    
+    line-height: 1.2;
+    color: #44425A;
+    background-color: transparent;
+}
+.courses a:hover{
+    color: #b34700;
+    text-decoration: underline;
+}
+.courses-2 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 350px;
+    text-align: left;
+    font-weight:bold;
+    padding: 0px 10px;
+    line-height: 1.2;
+    color: #44425A;
+    background-color: transparent;
+}
+.courses-2 a:hover{
+    color: #b34700;
+    text-decoration: underline;
+    
+}
+.sign-up{
+    width: 100%;
+}
+.sign-up h2{
+    color: #fff;
+    font-weight: 700;
+}
+.sign-up h3{
+    color: #fd7e14;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.float-left input{
+    width: 320px;
+    padding: 15px;
+    margin: 7px;
+    border-radius: 8px;  
+    border: transparent;  
+    color: #44425A;
+    font-size: 15px;
+    font-weight: bold;
+}
+.float-left select{
+    width: 320px;
+    padding: 12px;
+    margin: 7px;
+    border-radius: 8px; 
+    color: #44425A;
+    font-size: 15px;
+    font-weight: bold;
+    border: transparent;   
+}
+.sign-up p{
+    color: #fff;
+    font-size: 20;
+}
+.float-left ul li{
+    list-style-type: none;
+    color: #fff;
+    font-size: 20
+    }
+.sign-up{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+     url(/images/registration.jpg), 
+     no-repeat center center;
+    background-size: cover;
+}
+.sign-up-form{
+    width: 40%;
+    background-color: #FF6600;
+    text-align: center;
+}
+.sign-up-form .send-button{
+    color: #F2F1F8;
+    background-color: #44425A;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sign-up-form h2{
+    font-size: 30px;
+    background-color: #fff;
+    color: #44425A;
+    padding: 20px;
+    
+    border-radius: 7px;
+    }
+    .teachers{
+        width: 100%;
+        position: relative;
+    }
+    .teachers h3{
+    color: #fd7e14;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    }
+    .teachers h2{
+        color: #44425A;
+    font-weight: 700;
+    font-size: 30px;
+    }
+       .logo{
+        position: absolute;
+        top: 55%;
+        padding-left: 70px;        
+        font-size: 30px;
+        color: white; 
+        opacity: 0;  
+    
+    }
+    .image1{
+        opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-blend-mode: darken;
+    }
+    .demo:hover .image1{
+        opacity: 0.2;
+    }
+    .demo:hover .logo{
+        opacity: 1;
+    }
+    
+/* slider css start */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+   }
+  .mySlides p{
+      font-size: 20px;
+      font-weight: 500; 
+          
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    
+  }
+   
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#FF6600;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color:#44425A;
+  }
+  /* slider css end */
+
+  .our-blog{
+      width: 100%;
+      position: relative;
+      
+  }
+  .our-blog h3{
+    color: #fd7e14;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .our-blog h2{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #44425A;
+    text-transform: capitalize;
+
+  }
+  .blog-sub{
+      position: absolute;
+      width: 20%;
+      top: 70%;
+      
+  }
+  .testimonial h3{
+    text-transform: uppercase;
+    color: #fd7e14;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .testimonial h2{
+    
+        font-weight: bolder;
+        font-size: 40px;
+        color: #44425A;
+        text-transform: capitalize;
+    
+  }
+  .end-section{background-color: #44425A;padding: 50px 10px;}
+  .end-section h3{
+        text-transform: uppercase;
+        color: #fd7e14;
+        letter-spacing: 5px;
+        font-weight: 700;    
+  }
+  .end-section ul li{
+      font-size: 15px;
+      color: #fff;
+      font-weight: 500;
+      padding: 10px;
+  }
+  .end-section ul li a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      
+  }
+  .newsletter p{
+      color: #fff;
+      padding: 10px;
+  }
+  .newsletter button{
+      color: #fff;    
+      padding: 10px;
+  }
+  .end{
+      background-color: #44425A;      
+  }
+  .end div{
+      padding: 20px;
+  }
+  .end .float-left{
+      padding-right: 30%;
+  }
+  .end p{
+      text-transform: capitalize;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 400;
+      
+  }
+  .terms ul li{
+      display: inline-block;
+      padding-right: 10px;
+      font-size: 17px;
+      text-transform: capitalize;
+      font-weight: 400;
+           
+  }
+  .end ul li a{
+      color: #fff;
+      text-decoration: none;
+  }
+  /*about page*/
+  .about-bg{
+      background-image: url(/images/course-3.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .about-bg h2{
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-top: 10%;
+      padding-left: 80px;
+      font-size: 3.4rem;
+      line-height: 1.2;      
+  }
+  .about-bg p{
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding-top:15px;
+      padding-left: 80px;
+      font-size: 20px;         
+  }
+  .about-bg a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .about-bg a:hover{text-decoration: underline;}
+  .any-query{
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+  .any-query h3{
+    text-transform: uppercase;
+    color: #fd7e14;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .any-query h4{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #44425A;
+    text-transform: capitalize;
+  }
+  .query-form form{
+      background-color: #F2F1F8;
+      margin-left: 25%;
+      margin-right: 25%;
+      border-radius: 10px;
+      padding: 50px 0px;
+      
+           
+  }.any-query input{
+      width: 550px;
+      padding: 12px;
+      margin: 7px;
+      border-radius: 8px;
+      font-size: 15px;
+      border: none;
+  }
+  .any-query textarea{
+      width: 550px;
+      height: 150px;
+      font-size: 15px;
+      border: none;
+      padding:12px;
+      border-radius: 8px;
+      margin: 7px;  
+  }
+  .query-form .btn{
+      background-color: #fd7e14;
+      color: #fff;
+      padding: 15px;
+      font-size: 15px;
+  }
+  .badge-primary {
+    color: #fff;
+    background-color: #FF6600;
+    
+}
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.cour{
+    text-decoration:none;
+    font-size:15px;
+    padding-right: 50px;
+    font-weight: bold;
+    color: #44425A;    
+}
+.pre-next{
+    margin: 10px;
+    text-align: center;
+}
+.pre-next ul li{
+    display:inline-block;
+    list-style: none;
+    border: 1px solid #6C6A74;
+   
+    color: #fd7e14;
+}
+.pre-next ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #fd7e14;
+}
